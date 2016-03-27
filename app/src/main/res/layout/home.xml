@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/edit_search"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:text="搜索"
+        android:textSize="12dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#b4e0ff"
+        android:textColor="#335081"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="同济大学嘉定校区"
+        android:id="@+id/text_position"
+        android:layout_alignParentTop="false"
+        android:background="#ffffff"
+        android:layout_below="@+id/edit_search"
+        android:gravity="center_horizontal"
+        android:textColor="#4a6b83"
+        android:textSize="16dp"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点我切换"
+        android:id="@+id/button_changePosition"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/text_position"
+        android:background="#ffffff"
+        android:textColor="#488eb3"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="165dp"
+        android:layout_marginBottom="0dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/button_changePosition"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#00ffffff"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/button_food"
+            android:background="#00d8d0ff"
+            android:src="@drawable/food"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:layout_margin="8dp" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/button_film"
+            android:src="@drawable/film"
+            android:background="#00d8d0ff"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:layout_margin="8dp" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/button_hotel"
+            android:layout_weight="1"
+            android:src="@drawable/hotel"
+            android:background="#00d8d0ff"
+            android:scaleType="centerInside"
+            android:layout_margin="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/linearLayout2"
+        android:background="#00d8d0ff">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="美食"
+            android:id="@+id/btn_food"
+            android:layout_weight="1"
+            android:textColor="#010101"
+            android:textSize="12dp"
+            android:background="#00d8d0ff" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="电影"
+            android:id="@+id/btn_film"
+            android:textSize="12dp"
+            android:layout_weight="1"
+            android:background="#00d8d0ff" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="酒店"
+            android:id="@+id/btn_hotel"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:background="#00d8d0ff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/linearLayout3">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/button_music"
+            android:background="#00d8d0ff"
+            android:src="@drawable/music"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:layout_margin="8dp" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/button_sports"
+            android:src="@drawable/sports"
+            android:background="#00d8d0ff"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:layout_margin="8dp" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/button_entertainment"
+            android:background="#05d8d0ff"
+            android:src="@drawable/entertainment"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:layout_margin="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#00d8d0ff"
+        android:id="@+id/linearLayout4">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="音乐"
+            android:id="@+id/btn_art"
+            android:layout_weight="1"
+            android:textColor="#010101"
+            android:textSize="12dp"
+            android:background="#00d8d0ff" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="运动"
+            android:id="@+id/btn_sports"
+            android:textSize="12dp"
+            android:layout_weight="1"
+            android:background="#00d8d0ff" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="娱乐"
+            android:id="@+id/btn_entertainment"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:background="#00d8d0ff" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/linearLayout4"
+        android:src="@drawable/play"
+        android:scaleType="centerInside"
+        android:layout_alignLeft="@+id/edit_search"
+        android:layout_alignStart="@+id/edit_search"
+        android:layout_alignRight="@+id/edit_search"
+        android:layout_alignEnd="@+id/edit_search"
+        android:layout_marginBottom="10dp" />
+</RelativeLayout>
