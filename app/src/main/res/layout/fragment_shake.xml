@@ -12,7 +12,7 @@
         android:layout_alignLeft="@+id/linearLayout"
         android:layout_alignStart="@+id/linearLayout"
         android:background="#ffffff"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="5dp"
         android:gravity="center_horizontal"
         android:textColor="#4a6b83"
         android:textSize="16dp"

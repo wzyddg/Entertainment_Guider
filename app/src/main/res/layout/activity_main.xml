@@ -9,7 +9,8 @@
         android:layout_height="65dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:background="#81ccf4">
+        android:background="#81ccf4"
+        android:id="@+id/linearLayout5">
 
         <ImageButton
             android:layout_width="60dp"
@@ -50,4 +51,13 @@
             android:textColor="#488eb3"
             android:textSize="20dp" />
     </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp"
+        android:id="@+id/id_content"></FrameLayout>
 </RelativeLayout>
