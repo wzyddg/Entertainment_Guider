@@ -186,7 +186,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="音乐"
-            android:id="@+id/btn_art"
+            android:id="@+id/btn_music"
             android:layout_weight="1"
             android:textColor="#010101"
             android:textSize="12dp"
