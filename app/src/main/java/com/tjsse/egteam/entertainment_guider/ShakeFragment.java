@@ -2,6 +2,7 @@ package com.tjsse.egteam.entertainment_guider;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -31,6 +32,8 @@ public class ShakeFragment extends Fragment implements SensorEventListener,OnCli
     SensorManager sensorManager=null;
     Vibrator vibrator=null;
 
+    //TODO: Use Intent to pass parameter-"type".
+    //Intent intent=new Intent(getActivity(),MapActivity.class);
     String type=null;
 
 
@@ -80,6 +83,11 @@ public class ShakeFragment extends Fragment implements SensorEventListener,OnCli
             }
         }
 
+        if(type!=null){
+            //intent.putExtra("type",type);
+            //startActivity(intent);
+        }
+
     }
 
     @Override
@@ -105,24 +113,24 @@ public class ShakeFragment extends Fragment implements SensorEventListener,OnCli
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.btn_food:
-                type="food";
+                type = "food";
                 break;
             case R.id.btn_film:
-                type="film";
+                type = "film";
                 break;
             case R.id.btn_hotel:
-                type="hotel";
+                type = "hotel";
                 break;
             case R.id.btn_music:
-                type="music";
+                type = "music";
                 break;
             case R.id.btn_sports:
-                type="sports";
+                type = "sports";
                 break;
             case R.id.btn_entertainment:
-                type="entertainments";
+                type = "entertainment";
                 break;
         }
 

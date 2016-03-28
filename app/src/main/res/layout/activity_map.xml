@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/map"></FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/map"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已为您在周边搜索到"
+            android:id="@+id/hint2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#00d8d0ff"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="游子口福居"
+            android:id="@+id/shake_result"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:textColor="#ff803d"
+            android:textSize="33dp"
+            android:gravity="right" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton2"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/shake_result"
+            android:layout_toEndOf="@+id/shake_result"
+            android:src="@drawable/go_there"
+            android:layout_alignParentRight="true"
+            android:background="#00d8d0ff" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="不满意？再摇一次～"
+            android:id="@+id/btn_tryAgain"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="true"
+            android:background="#00d8d0ff"
+            android:textColor="#8fc3ff"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="30dp" />
+    </RelativeLayout>
+</RelativeLayout>
