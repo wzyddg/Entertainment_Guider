@@ -39,6 +39,12 @@ public class MainActivity extends Activity implements OnClickListener{
         FragmentManager fm=getFragmentManager();
         FragmentTransaction ft=fm.beginTransaction();
 
+        btnRoute.setTextColor(0xFF488eb3);
+        btnRecommend.setTextColor(0xFF488eb3);
+        btnShake.setTextColor(0xFF488eb3);
+
+        ((Button)v).setTextColor(0xFF000000);
+
         switch(v.getId()){
             case R.id.button_recommend:
                 if(recommendFragment==null){
