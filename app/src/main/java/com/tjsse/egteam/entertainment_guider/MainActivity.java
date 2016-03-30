@@ -31,6 +31,8 @@ public class MainActivity extends Activity implements OnClickListener{
         btnShake.setOnClickListener(this);
         btnRoute.setOnClickListener(this);
 
+        btnRecommend.setTextColor(0xFF000000);
+
         setDefaultFragment();
     }
 

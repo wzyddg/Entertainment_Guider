@@ -69,7 +69,7 @@
         <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/button_food"
+            android:id="@+id/button_food_fragShake"
             android:background="#00d8d0ff"
             android:src="@drawable/food"
             android:layout_weight="1"
@@ -79,7 +79,7 @@
         <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/button_film"
+            android:id="@+id/button_film_fragShake"
             android:src="@drawable/film"
             android:background="#00d8d0ff"
             android:layout_weight="1"
@@ -89,7 +89,7 @@
         <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/button_hotel"
+            android:id="@+id/button_hotel_fragShake"
             android:layout_weight="1"
             android:src="@drawable/hotel"
             android:background="#00d8d0ff"
@@ -112,9 +112,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="美食"
-            android:id="@+id/btn_food"
+            android:id="@+id/btn_food_fragShake"
             android:layout_weight="1"
-            android:textColor="#010101"
+            android:textColor="#488eb3"
             android:textSize="12dp"
             android:background="#00d8d0ff" />
 
@@ -122,18 +122,20 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="电影"
-            android:id="@+id/btn_film"
+            android:id="@+id/btn_film_fragShake"
             android:textSize="12dp"
             android:layout_weight="1"
+            android:textColor="#488eb3"
             android:background="#00d8d0ff" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="酒店"
-            android:id="@+id/btn_hotel"
+            android:id="@+id/btn_hotel_fragShake"
             android:layout_weight="1"
             android:textSize="12dp"
+            android:textColor="#488eb3"
             android:background="#00d8d0ff" />
     </LinearLayout>
 
@@ -150,7 +152,7 @@
         <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/button_music"
+            android:id="@+id/button_music_fragShake"
             android:background="#00d8d0ff"
             android:src="@drawable/music"
             android:layout_weight="1"
@@ -160,7 +162,7 @@
         <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/button_sports"
+            android:id="@+id/button_sports_fragShake"
             android:src="@drawable/sports"
             android:background="#00d8d0ff"
             android:layout_weight="1"
@@ -170,7 +172,7 @@
         <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/button_entertainment"
+            android:id="@+id/button_entertainment_fragShake"
             android:background="#05d8d0ff"
             android:src="@drawable/entertainment"
             android:layout_weight="1"
@@ -192,9 +194,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="音乐"
-            android:id="@+id/btn_music"
+            android:id="@+id/btn_music_fragShake"
             android:layout_weight="1"
-            android:textColor="#010101"
+            android:textColor="#488eb3"
             android:textSize="12dp"
             android:background="#00d8d0ff" />
 
@@ -202,16 +204,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="运动"
-            android:id="@+id/btn_sports"
+            android:id="@+id/btn_sports_fragShake"
             android:textSize="12dp"
             android:layout_weight="1"
+            android:textColor="#488eb3"
             android:background="#00d8d0ff" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="娱乐"
-            android:id="@+id/btn_entertainment"
+            android:id="@+id/btn_entertainment_fragShake"
+            android:textColor="#488eb3"
             android:layout_weight="1"
             android:textSize="12dp"
             android:background="#00d8d0ff" />
