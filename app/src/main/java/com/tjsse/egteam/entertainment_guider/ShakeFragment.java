@@ -89,57 +89,69 @@ public class ShakeFragment extends Fragment implements SensorEventListener {
 
                 switch (v.getId()) {
                     case R.id.btn_food_fragShake:
-                        type = "food";
+                        type = "餐饮";
                         btnFood.setTextColor(0xFF000000);
                         Log.e("btnf", "onClick: btn_food");
                         break;
                     case R.id.btn_film_fragShake:
-                        type = "film";
+                        type = "电影";
                         btnFilm.setTextColor(0xFF000000);
                         break;
                     case R.id.btn_hotel_fragShake:
-                        type = "hotel";
+                        type = "住宿";
                         btnHotel.setTextColor(0xFF000000);
                         break;
                     case R.id.btn_music_fragShake:
-                        type = "music";
+                        type = "音乐";
                         btnMusic.setTextColor(0xFF000000);
                         break;
                     case R.id.btn_sports_fragShake:
-                        type = "sports";
+                        type = "运动";
                         btnSports.setTextColor(0xFF000000);
                         break;
                     case R.id.btn_entertainment_fragShake:
-                        type = "entertainment";
+                        type = "娱乐";
                         btnEntertainment.setTextColor(0xFF000000);
                         break;
                     case R.id.button_food_fragShake:
-                        type = "food";
+                        type = "餐饮";
                         btnFood.setTextColor(0xFF000000);
                         break;
                     case R.id.button_film_fragShake:
-                        type = "film";
+                        type = "电影";
                         btnFilm.setTextColor(0xFF000000);
                         break;
                     case R.id.button_hotel_fragShake:
-                        type = "hotel";
+                        type = "住宿";
                         btnHotel.setTextColor(0xFF000000);
                         break;
                     case R.id.button_music_fragShake:
-                        type = "music";
+                        type = "音乐";
                         btnMusic.setTextColor(0xFF000000);
                         break;
                     case R.id.button_sports_fragShake:
-                        type = "sports";
+                        type = "运动";
                         btnSports.setTextColor(0xFF000000);
                         break;
                     case R.id.button_entertainment_fragShake:
-                        type = "entertainment";
+                        type = "娱乐";
                         btnEntertainment.setTextColor(0xFF000000);
                         break;
                 }
             }
         };
+
+//        Button jump = (Button) view.findViewById(R.id.jump);
+//        jump.setOnClickListener(new OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                Intent intent = new Intent(getActivity(),ShakeActivity.class);
+//                intent.putExtra("target",type);
+//                startActivity(intent);
+//
+//            }
+//        });
 
         btnFood.setOnClickListener(commonOnClickListener);
         btnFilm.setOnClickListener(commonOnClickListener);
@@ -220,9 +232,15 @@ public class ShakeFragment extends Fragment implements SensorEventListener {
                         }
                     }).show();
         }else {
-            AlertDialog ad = new AlertDialog.Builder(getActivity()).setMessage("good there")
-                    .setPositiveButton("确定", null).show();
+//            AlertDialog ad = new AlertDialog.Builder(getActivity()).setMessage("good there")
+//                    .setPositiveButton("确定", null).show();
             //// TODO: 2016/3/31 do the jump
+//            startActivity(new Intent(getActivity(), ShakeActivity.class));
+            allowShake=false;
+            Intent intent = new Intent(getActivity(),ShakeActivity.class);
+            intent.putExtra("target",type);
+            startActivity(intent);
+            allowShake = true;
         }
     }
 
